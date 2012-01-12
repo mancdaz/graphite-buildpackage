@@ -1,0 +1,12 @@
+graphite (0.9.9-1) stable; urgency=low
+
+  * Bump to 0.9.9 based on graphite-dev debian rules
+
+ -- Ron Pedde <ron@pedde.com>  Thu, 12 Jan 2012 05:14:54 +0000
+
+graphite (0.9.6-1UNRELEASED5) maverick; urgency=low
+
+  * Initial release (Closes: #0)
+
+ -- Ilya Zakreuski <izakreuski@gmail.com>  Tue, 14 Sep 2010 20:02:48 +0300
+

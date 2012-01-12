@@ -1,0 +1,17 @@
+--- a/webapp/graphite/settings.py
++++ b/webapp/graphite/settings.py
+@@ -24,12 +24,12 @@
+ WEB_DIR = dirname( abspath(__file__) ) + '/'
+ WEBAPP_DIR = dirname( dirname(WEB_DIR) ) + '/'
+ GRAPHITE_ROOT = dirname( dirname(WEBAPP_DIR) ) + '/'
+-CONTENT_DIR = WEBAPP_DIR + 'content/'
++CONTENT_DIR = '/usr/share/graphite/webapp/content/'
+ CSS_DIR = CONTENT_DIR + 'css/'
+ THIRDPARTY_DIR = WEB_DIR + 'thirdparty/'
+ 
+ CONF_DIR = os.environ.get('GRAPHITE_CONF_DIR', GRAPHITE_ROOT + 'conf/')
+-STORAGE_DIR = os.environ.get('GRAPHITE_STORAGE_DIR', GRAPHITE_ROOT + 'storage/')
++STORAGE_DIR = os.environ.get('GRAPHITE_STORAGE_DIR','/var/lib/graphite/storage/')
+ LISTS_DIR = STORAGE_DIR + 'lists/'
+ INDEX_FILE = STORAGE_DIR + 'index'
+ WHITELIST_FILE = LISTS_DIR + 'whitelist'
