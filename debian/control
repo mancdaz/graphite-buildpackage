@@ -1,7 +1,7 @@
 Source: graphite
 Section: utils
 Priority: optional
-Mainainer: Ron Pedde <ron@pedde.com>
+Maintainer: Ron Pedde <ron@pedde.com>
 XCBS-Original-Maintainer: Arthur Gautier <arthur.gautier@savoirfairelinux.com>, Ilya Zakreuski <izakreuski@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~)
 Build-Depends-Indep: python-support (>= 0.90.0),
