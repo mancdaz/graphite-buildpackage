@@ -19,7 +19,7 @@
  if [ "$GRAPHITE_STORAGE_DIR" = "" ]
  then
 -  GRAPHITE_STORAGE_DIR="${GRAPHITE_ROOT}/storage"
-+  GRAPHITE_STORAGE_DIR="/var/cache/graphite"
++  GRAPHITE_STORAGE_DIR="/var/lib/graphite"
  fi
  
  
