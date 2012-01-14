@@ -1,9 +1,25 @@
-Index: graphite-packaging/setup.cfg
-===================================================================
---- graphite-packaging.orig/setup.cfg	2010-09-13 19:03:25.060909545 +0300
-+++ graphite-packaging/setup.cfg	2010-09-13 19:03:32.904912564 +0300
-@@ -1,3 +1 @@
--[install]
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -1,3 +1,4 @@
+ [install]
 -prefix = /opt/graphite
--install-lib = %(prefix)s/webapp
++prefix = /usr/share/graphite
+ install-lib = %(prefix)s/webapp
 +
+--- a/bin/build-index.sh
++++ b/bin/build-index.sh
+@@ -2,12 +2,12 @@
+ 
+ if [ "$GRAPHITE_ROOT" = "" ]
+ then
+-  GRAPHITE_ROOT="/opt/graphite"
++  GRAPHITE_ROOT="/usr/share/graphite"
+ fi
+ 
+ if [ "$GRAPHITE_STORAGE_DIR" = "" ]
+ then
+-  GRAPHITE_STORAGE_DIR="${GRAPHITE_ROOT}/storage"
++  GRAPHITE_STORAGE_DIR="/var/cache/graphite"
+ fi
+ 
+ 
