@@ -19,6 +19,7 @@ override_dh_auto_install:
 
 
 	mkdir -p debian/graphite/var/lib/graphite
+	mkdir -p debian/graphite/usr/bin
 	mv debian/graphite/usr/share/graphite/storage debian/graphite/var/lib/graphite
 	mv debian/graphite/usr/share/graphite/bin/run-graphite-devel-server.py debian/graphite/usr/bin/run-graphite-devel-server
 	mv debian/graphite/usr/share/graphite/bin/build-index.sh debian/graphite/usr/bin/build-index.sh
