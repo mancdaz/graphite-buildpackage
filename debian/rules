@@ -12,11 +12,14 @@ override_dh_auto_configure:
 
 override_dh_auto_install:
 	dh_auto_install
-#	mv debian/graphite/usr/webapp debian/graphite/usr/share/graphite
-#	find debian/graphite/usr/share/graphite/webapp -type f -exec chmod 644 {} \;
+	mv debian/graphite/opt/graphite/webapp debian/graphite/usr/share/graphite
+	find debian/graphite/usr/share/graphite/webapp -type f -exec chmod 644 {} \;
 
-	mv debian/graphite/usr/storage debian/graphite/var/lib/graphite
-	mv debian/graphite/usr/bin/run-graphite-devel-server.py debian/graphite/usr/bin/run-graphite-devel-server
+	ls -lR debian/graphite > /tmp/list.txt
+
+	mv debian/graphite/opt/graphite/storage debian/graphite/var/lib/graphite
+	mv debian/graphite/opt/bin/run-graphite-devel-server.py debian/graphite/usr/bin/run-graphite-devel-server
+	mv debian/graphite/opt/bin/build-index.sh debian/graphite/usr/bin/build-index.sh
 
 .PHONY: override_dh_auto_configure override_dh_auto_install
 
