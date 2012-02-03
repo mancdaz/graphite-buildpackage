@@ -10,9 +10,9 @@ case "$1" in
 # create tables for models which have not yet been installed.  It will
 # never issue ALTER TABLE statements to match changes made to a model
 # class after installation.
+	python -mcompileall /usr/share/graphite/webapp
 
-        update-python-modules -p graphite.public
-        su www-data -p -c "django-admin syncdb --pythonpath=/usr/lib/pymodules/#PYTHON_VERSION# --settings graphite.settings --noinput"
+        su www-data -p -c "django-admin syncdb --pythonpath=/usr/share/graphite/webapp --settings graphite.settings --noinput"
 
 # override file permissions in /var/lib/graphite
 

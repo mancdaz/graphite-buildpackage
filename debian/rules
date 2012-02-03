@@ -14,9 +14,8 @@ override_dh_auto_install:
 	dh_auto_install
 	ls -lR debian/graphite > /tmp/list.txt
 
-#	mv debian/graphite/opt/graphite/webapp debian/graphite/usr/share/graphite
-	find debian/graphite/usr/share/graphite/webapp -type f -exec chmod 644 {} \;
 
+	find debian/graphite/usr/share/graphite/webapp -type f -exec chmod 644 {} \;
 
 	mkdir -p debian/graphite/var/lib/graphite
 	mkdir -p debian/graphite/usr/bin

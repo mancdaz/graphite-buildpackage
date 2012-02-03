@@ -19,7 +19,8 @@ Depends: ${python:Depends}, ${misc:Depends},
  python-django,
  python-simplejson,
  libapache2-mod-python,
- libjs-scriptaculous
+ libjs-scriptaculous,
+ python-django-tagging
 Suggests: python-ldap, python-memcache
 XB-Python-Version: ${python:Versions}
 Description: Enterprise Scalable Realtime Graphing
