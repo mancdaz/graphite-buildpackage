@@ -6,6 +6,7 @@
                 SetEnv DJANGO_SETTINGS_MODULE graphite.settings
                 PythonDebug Off
                 PythonAutoReload Off
+		PythonPath "['/usr/share/graphite/webapp'] + sys.path"
         </Location>
         <Location "/content/">
                 SetHandler None
