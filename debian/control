@@ -1,8 +1,9 @@
 Source: graphite
 Section: utils
 Priority: optional
-Maintainer: Ron Pedde <ron@pedde.com>
+Maintainer: OSOps Packaging <osops-packaging@lists.launchpad.net>
 XCBS-Original-Maintainer: Arthur Gautier <arthur.gautier@savoirfairelinux.com>, Ilya Zakreuski <izakreuski@gmail.com>
+Uploaders: Ron Pedde <ron@pedde.com>
 Build-Depends: debhelper (>= 7.0.50~)
 Build-Depends-Indep: python-support (>= 0.90.0),
  python-setuptools (>= 0.6b3-1~)
