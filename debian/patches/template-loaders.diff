@@ -1,7 +1,5 @@
-diff --git webapp/graphite/settings.py webapp/graphite/settings.py
-index 0740240..a4a464d 100644
---- webapp/graphite/settings.py
-+++ webapp/graphite/settings.py
+--- a/webapp/graphite/settings.py
++++ b/webapp/graphite/settings.py
 @@ -157,8 +157,8 @@ SECRET_KEY = ''
  
  # List of callables that know how to import templates from various sources.
